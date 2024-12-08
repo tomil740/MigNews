@@ -24,3 +24,36 @@ This is a simple news app that fetches the latest articles, displays them to the
 - **Other tools**:
   - CSS (for basic styling)
   - ES6+ features (such as async/await)
+
+  ## Getting Started
+
+### 1. Clone the Repository
+
+First, clone this repository to your local machine:
+
+### 2. Backend (Server) Setup
+
+The backend is a simple Express server that provides news data and handles mood score updates.
+
+#### Install Dependencies
+
+Navigate to the backend folder and install the required dependencies:
+
+
+#### Set Up Environment Variables
+
+Create a `.env` file in the root of the server folder and add your API key for the external news source:
+
+The server will be accessible at `http://localhost:4040` by default.
+
+### 3. Frontend Setup
+
+The frontend is built with React and communicates with the backend API.
+
+#### Install Dependencies
+
+Navigate to the frontend folder and install the required dependencies:
+
+#### Start the Frontend
+
+To start the React development server, run the following command:
