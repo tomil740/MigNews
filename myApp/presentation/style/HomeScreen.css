@@ -1,0 +1,48 @@
+/* MatchedList.css */
+
+.matched-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  padding: 16px;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.matched-list-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.matched-list-item:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+  .matched-list-container {
+    padding: 24px;
+  }
+
+  .app-header {
+    font-size: 2rem;
+  }
+}
