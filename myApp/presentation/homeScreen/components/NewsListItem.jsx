@@ -5,8 +5,8 @@ function NewsListItem({item}) {
     <div className="news-list-item">
       <img src={item.image} alt={item.title} className="news-list-item-image" />
       <div className="news-list-item-content">
-        <h3 className="news-list-item-header">{item.summary}</h3>
-        <p className="news-list-item-author">By {item.authors}</p>
+        <h3 className="news-list-item-header">{item.title}</h3>
+        <p className="news-list-item-author">By {item.author}</p>
         <p className="news-list-item-timestamp">
           {new Date(item.publish_date).toLocaleString()}
         </p>

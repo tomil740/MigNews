@@ -91,9 +91,10 @@ app.post("/api/mood", async (req, res) => {
 
     // If a title and description are provided, improve them for empathy and positivity
     if (title && description) {
-      const prompt = `I will give you a title,news story and its current mood score(0-10). Your task is to 
-        make both more empathetic and positive without losing important facts.
-        and in the end supply new matched mood score to the result(should be lower then the parmeter).
+      const prompt = `I will give you a title,news story and its current mood score(0-10) 0 = the most empathetic and positive titel and news story.
+        Your task is to make both(titel and news story arguments) more empathetic and positive without losing important facts.
+        and in the end supply new matched mood score to the result.
+        The new mood score must be lower then the argument one!
 
         Title: "${title}"
         Description: "${description}"
