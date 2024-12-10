@@ -4,7 +4,7 @@
 */
 
 export async function getNews() {
-  const url = "http://localhost:4040/api/new"; // Assuming your server is running locally
+  const url = "http://localhost:4040/api/news"; // Assuming your server is running locally
 
   console.log("Fetching fresh data from our server...");
 
@@ -23,7 +23,9 @@ export async function getNews() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
+    console.log("called!!1")
     const data = await response.json();
+    console.log("working!!",data)
 
     // Check if the response includes expected data
     if (!Array.isArray(data)) {

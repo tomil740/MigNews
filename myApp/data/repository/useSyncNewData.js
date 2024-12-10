@@ -16,6 +16,15 @@ export function useSyncNewData() {
     }));
 
     try {
+      const cachedData = localStorage.getItem(NEWS_CACHE_KEY);
+      console.log("locald", JSON.parse(cachedData));
+      if (cachedData) {
+        set(newsDataState, {
+          data: JSON.parse(cachedData),
+          loading: false,
+          error: null,
+        });
+      }
       // Fetch the news data
       const newsApiData = await getNews();
 
